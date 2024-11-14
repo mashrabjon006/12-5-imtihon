@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vakansiya Ma'lumotlari Formasi</title>
+    <link rel="stylesheet" href="strle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_image">
+            <img src="images/Combined_Shape.png" alt="">
+        </div>
+        <div class="form-container">
+            <h2>Vakansiya ma'lumotlarini kiriting</h2>
+
+            <label for="logo-url">Logotip URL</label>
+            <input type="text" id="logo-url" placeholder="Logotip URL manzilini kiriting">
+
+            <label for="company-name">Kompaniya nomi</label>
+            <input type="text" id="company-name" value="Manage">
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="new-tag"> Yangi</label>
+                <label><input type="checkbox" id="featured-tag"> Featured</label>
+            </div>
+
+            <label for="position">Lavozim</label>
+            <input type="text" id="position" value="Fullstack Developer">
+
+            <div class="dropdown-group">
+                <div>
+                    <label for="time">Vaqt</label>
+                    <select id="time">
+                        <option>1 d ago</option>
+                        <option>2 d ago</option>
+                        <option>3 d ago</option>
+                        <option>4 d ago</option>
+                        <option>5 d ago</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="job-type">Ish turi</label>
+                    <select id="job-type">
+                        <option>full-time</option>
+                        <option>part-time</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="location">Joylashuv</label>
+                    <select id="location">
+                        <option>Usa</option>
+                        <option>Russia</option>
+                        <option>British</option>
+                        <option>Arabic</option>
+                        <option>China</option>
+                        <option>Uzb</option>
+                    </select>
+                </div>
+            </div>
+
+            <label>Ko'nikmalar</label>
+            <div class="skills-group">
+                <label><input type="checkbox" value="Fullstack"> Fullstack</label>
+                <label><input type="checkbox" value="Midweight"> Midweight</label>
+                <label><input type="checkbox" value="Python"> Python</label>
+                <label><input type="checkbox" value="React"> React</label>
+            </div>
+
+            <button type="button" onclick="addJobListing()">Saqlash</button>
+        </div>
+
+        <div class="job-listing-container" id="job-listing-container"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
